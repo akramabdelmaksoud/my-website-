@@ -209,7 +209,7 @@ input, select, textarea {
 /* Container */
 /* General styles for the image */
 .wrapper .container img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -226,7 +226,7 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		max-width: 100%;
+		max-width: 50%;
 		width: 68em;
 		color: #1f232b;
 	}
