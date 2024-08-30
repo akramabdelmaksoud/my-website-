@@ -207,6 +207,22 @@ input, select, textarea {
 	}
 
 /* Container */
+/* General styles for the image */
+.wrapper .container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Additional styles for mobile devices */
+@media (max-width: 768px) {
+    .wrapper .container img {
+        width: 90%; /* Reduce image size on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 
 	.container {
 		margin: 0 auto;
