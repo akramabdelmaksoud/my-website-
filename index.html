@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Crafting the future of the web, one pixel at a time.</a></h1>
+							<p>Transforming visionary ideas into dynamic, cutting-edge digital realities.</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li><a href="#intro">about</a></li>
+								<li>
+									<a href="#Portfolio">portfolio</a>
+									<ul>
+										<li><a href="#">cinema project</a></li>
+										<li><a href="#">clinic managment system</a></li>
+										<li><a href="#">alert detection website</a></li>
+									</ul>
+								</li>
+								<li><a href="#footer">get in touch</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Intro -->
+				<section id="intro" class="wrapper style1">
+					<div class="title">About ME</div>
+					<div class="container">
+						<p class="style1">So in case you dont know me yet ...</p>
+						<img src="C:\Users\panda\Desktop\personal website akram\img\profile linkedin for website.png" alt="About Me Image">
+
+						<p class="style10">
+							Hi... I am Akram <br class="mobile-hider" />
+							I'm a full-stack web developer.
+						</p>
+						<p>I am a dedicated Computer and Software Engineering student at
+							Ain Shams University, actively applying my knowledge as a
+							full-stack web developer. I specialize in both front-end
+							and back-end technologies, driven by a passion for crafting
+							dynamic, responsive websites and applications that deliver
+							outstanding user experiences. With a solid grounding in 
+							software engineering principles and practical web development
+							skills, I am enthusiastic about contributing to innovative 
+							projects and advancing in this exciting field.</p>
+						<ul class="actions">
+							<li><a href="https://drive.google.com/file/d/1o6z_9PJFH8rTuHRK4do12dJq0I4qUUnv/view?usp=drive_link" class="button style3 large">See My Cv</a></li>
+						</ul>
+					</div>
+				</section>
+
+			
+				<section id="Portfolio" class="wrapper style3">
+					<div class="title">Portfolio</div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="clininc port.html" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<h3><a href="clininc port.html">Clinic managment system</a></h3>
+									<p>A Clinic Management system simplifies clinic operations by allowing online appointment bookings, 
+										managing patient records, and streamlining billing. It enhances efficiency and improves patient 
+										experience with secure access to health information.</p>
+									<ul class="actions">
+										<li><a href="clininc port.html" class="button style1">view More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="cinema port.html" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="cinema port.html">Cinema booking website</a></h3>
+									<p>A Cinema Booking Website enables users to browse movies, view showtimes, select seats, 
+										and book tickets online. It offers an easy-to-use interface with secure payment options and real-time 
+										updates on movie schedulesand seat sellection.</p>
+									<ul class="actions">
+										<li><a href="cinema port.html" class="button style1">view More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="alert port.html" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a href="alert port.html">alert reporting webstie</a></h3>
+									<p>An 24/7 Alert Detection System monitors and displays the latest reported alerts, providing users with
+										 real-time updates on potential threats.
+										  It also offers guidance and resources to help users respond
+										  effectively to these alerts.</p>
+									<ul class="actions">
+										<li><a href="alert port.html" class="button style1">view More</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">contact me</div>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form id="contact-form" method="POST">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" required />
+													<small id="nameError" style="color: red; display: none;">Please enter your name.</small>
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="email" name="email" id="contact-email" placeholder="Email" required />
+													<small id="emailError" style="color: red; display: none;">Please enter a valid email address.</small>
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4" required></textarea>
+													<small id="messageError" style="color: red; display: none;">Please enter a message.</small>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+										
+										<!-- Success Message -->
+										<p id="successMessage" style="display: none; color: green;">Thank you! Your message has been sent.</p>
+										<!-- Error Message -->
+										<p id="errorMessage" style="display: none; color: red;">There was a problem with the submission. Please try again later.</p>
+									</section>
+									<script>
+										function showPopup() {
+											alert("Thank you! I will contact you back.");
+											document.querySelector('form').reset();
+											
+										}
+										document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var isValid = true;
+
+    // Validate Name
+    var nameField = document.getElementById('contact-name');
+    var nameError = document.getElementById('nameError');
+    if (nameField.value.trim() === "") {
+        nameError.style.display = 'block';
+        isValid = false;
+    } else {
+        nameError.style.display = 'none';
+    }
+
+    // Validate Email
+    var emailField = document.getElementById('contact-email');
+    var emailError = document.getElementById('emailError');
+    var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailField.value.match(emailPattern)) {
+        emailError.style.display = 'block';
+        isValid = false;
+    } else {
+        emailError.style.display = 'none';
+    }
+
+    // Validate Message
+    var messageField = document.getElementById('contact-message');
+    var messageError = document.getElementById('messageError');
+    if (messageField.value.trim() === "") {
+        messageError.style.display = 'block';
+        isValid = false;
+    } else {
+        messageError.style.display = 'none';
+    }
+
+    // If the form is valid, send the data via AJAX
+    if (isValid) {
+        var formData = new FormData(this);
+
+        fetch('https://formspree.io/f/xpwabnkz', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(function(response) {
+            if (response.ok) {
+                // Show success message
+                document.getElementById('successMessage').style.display = 'block';
+                // Hide error message
+                document.getElementById('errorMessage').style.display = 'none';
+                // Reset the form
+                document.getElementById('contact-form').reset();
+            } else {
+                return response.json().then(function(data) {
+                    // Show error message
+                    document.getElementById('errorMessage').style.display = 'block';
+                    console.error('Error:', data);
+                });
+            }
+        }).catch(function(error) {
+            document.getElementById('errorMessage').style.display = 'block';
+            console.error('There was a problem with the submission:', error);
+        });
+    }
+});
+										
+									</script>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="https://www.instagram.com/akram_maksoud/">
+															<i class="fab fa-instagram"></i> instagram
+														</a><br />
+														<a href="https://www.linkedin.com/in/akram-abdelmaksoud-a7137a2ba/">
+															<i class="fab fa-linkedin"></i> linkedin
+														</a><br />
+														<a href="https://www.facebook.com/profile.php?id=100011333873055">
+															<i class="fab fa-facebook"></i> facebook
+														</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">eng.akramabdelmaksoud@gmail.com</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														(+20) 1032765977
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3>location</h3>
+													<p>
+														Cairo/Egypt<br> fifthsettelment 
+													</p>
+												</section>
+											</div>
+										</div>
+										<div id="copyright">
+											<p>&copy; copyrights</p>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						
+					</div>
+					
+				</section>
+				
+				
+
+		</div>
+		
+		
+		
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
